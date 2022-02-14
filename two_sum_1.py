@@ -9,7 +9,7 @@ def two_sum(nums, target):
 
     for index, num in enumerate(nums):
         if target - num not in records:
-            records[target - num] = index
+            records[num] = index
         else:
             return [records[target - num], index]
 
